@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppFunctionAppMetadata xmlns:appfn="http://schemas.android.com/apk/androidx.appfunctions"
+    appfn:description="SpotAtlas finds paid parking and runs parking sessions for the driver in Warsaw, Kraków, Gdańsk, Berlin and London.
+
+    Operational patterns:
+    - Resolve a spotId with &apos;findParkingSpots&apos; before calling &apos;startParkingSession&apos;; spot ids are not guessable.
+    - &apos;findParkingSpots&apos; already sorts by distance, so the first result is the recommendation unless the user asked for something else, such as EV charging or a cheaper price.
+    - Each result carries a &apos;startParkingLink&apos; deep link; offer it when the user prefers to review and start the stay in the app instead of having it started for them.
+    - &apos;endParkingSession&apos; with an empty sessionId stops whatever stay is running, so there is no need to look the id up first.
+
+    Constraints:
+    - &apos;startParkingSession&apos; charges the driver. Confirm the car park, the licence plate and the duration with the user before calling it.
+    - Only one parking session runs at a time.
+    - Coverage is limited to the five cities above; there is no data for any other city.
+    - Prices are per hour in the currency each result reports, and are not comparable across cities."
+    appfn:displayDescription="@string/app_functions_display_description" />

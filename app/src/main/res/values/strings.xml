@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SpotAtlas</string>
+    <string name="app_functions_display_description">Find parking and start or stop a parking session.</string>
+</resources>
